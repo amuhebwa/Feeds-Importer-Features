@@ -1,0 +1,11 @@
+name = Devtrac Locations Importer Feature
+description = Imports Location information into a devtrac instance
+core = 7.x
+package = Devtrac
+version = 7.x-1.0-beta1
+project = devtrac_locations_importer_feature
+dependencies[] = ctools
+dependencies[] = feeds
+features[ctools][] = feeds:feeds_importer_default:1
+features[features_api][] = api:2
+features[feeds_importer][] = devtrac_locations_importer

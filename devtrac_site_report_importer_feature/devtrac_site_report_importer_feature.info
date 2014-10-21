@@ -1,0 +1,11 @@
+name = Devtrac Site Report Importer Feature
+description = Imports site report data into a devtrac instance
+core = 7.x
+package = Devtrac
+version = 7.x-1.0-beta1
+project = devtrac_site_report_importer_feature
+features[ctools][] = feeds:feeds_importer_default:1
+features[features_api][] = api:2
+features[feeds_importer][] = devtrac7_site_report_importer
+features_exclude[dependencies][ctools] = ctools
+features_exclude[dependencies][feeds] = feeds

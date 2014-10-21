@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Devtrac Users Importer Feature feature.
+ */
+
+include_once 'devtrac_users_importer_feature.features.inc';
