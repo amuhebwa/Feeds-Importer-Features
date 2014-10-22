@@ -54,25 +54,25 @@ function devtrac_locations_importer_feature_feeds_importer_default() {
             'autocreate' => 1,
           ),
           2 => array(
-            'source' => 'Location Type',
-            'target' => 'taxonomy_vocabulary_1',
-            'term_search' => '0',
-            'autocreate' => 1,
-          ),
-          3 => array(
             'source' => 'Lat',
             'target' => 'field_place_lat_long:lat',
             'unique' => FALSE,
           ),
-          4 => array(
+          3 => array(
             'source' => 'Lon',
             'target' => 'field_place_lat_long:lon',
             'unique' => FALSE,
           ),
-          5 => array(
+          4 => array(
             'source' => 'Title',
             'target' => 'title',
             'unique' => FALSE,
+          ),
+          5 => array(
+            'source' => 'Location Types',
+            'target' => 'taxonomy_vocabulary_1',
+            'term_search' => '0',
+            'autocreate' => 1,
           ),
         ),
         'update_existing' => '0',
