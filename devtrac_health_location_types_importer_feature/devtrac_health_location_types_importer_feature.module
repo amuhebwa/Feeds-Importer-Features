@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Devtrac Health Location Types Importer Feature feature.
+ */
+
+include_once 'devtrac_health_location_types_importer_feature.features.inc';

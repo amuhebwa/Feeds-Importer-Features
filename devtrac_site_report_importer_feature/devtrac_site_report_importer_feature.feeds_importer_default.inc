@@ -39,8 +39,8 @@ function devtrac_site_report_importer_feature_feeds_importer_default() {
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
         'expire' => '-1',
-        'author' => 0,
-        'authorize' => 1,
+        'author' => '1',
+        'authorize' => 0,
         'mappings' => array(
           0 => array(
             'source' => 'UUID',
@@ -55,41 +55,54 @@ function devtrac_site_report_importer_feature_feeds_importer_default() {
           2 => array(
             'source' => 'Sector',
             'target' => 'taxonomy_vocabulary_8',
-            'unique' => FALSE,
+            'term_search' => '0',
+            'autocreate' => 1,
           ),
           3 => array(
-            'source' => 'Visited on',
-            'target' => 'field_ftritem_date_visited:start',
-            'unique' => FALSE,
-          ),
-          4 => array(
             'source' => 'Status',
             'target' => 'field_ftritem_status',
             'unique' => FALSE,
           ),
-          5 => array(
+          4 => array(
             'source' => 'Public Summary',
             'target' => 'field_ftritem_public_summary',
             'unique' => FALSE,
           ),
-          6 => array(
+          5 => array(
             'source' => 'Full Report',
             'target' => 'field_ftritem_narrative',
             'unique' => FALSE,
           ),
-          7 => array(
+          6 => array(
             'source' => 'Location Type',
             'target' => 'taxonomy_vocabulary_1',
-            'unique' => FALSE,
+            'term_search' => '0',
+            'autocreate' => 1,
           ),
-          8 => array(
+          7 => array(
             'source' => 'Site Report Type',
             'target' => 'taxonomy_vocabulary_7',
+            'term_search' => '0',
+            'autocreate' => 1,
+          ),
+          8 => array(
+            'source' => 'Field Trip',
+            'target' => 'entityreference:field_ftritem_field_trip',
             'unique' => FALSE,
           ),
           9 => array(
-            'source' => 'Field Trip',
-            'target' => 'entityreference:field_ftritem_field_trip',
+            'source' => 'Site Visit Lat',
+            'target' => 'field_ftritem_lat_long:lat',
+            'unique' => FALSE,
+          ),
+          10 => array(
+            'source' => 'Site Visit Lon',
+            'target' => 'field_ftritem_lat_long:lon',
+            'unique' => FALSE,
+          ),
+          11 => array(
+            'source' => 'Visited on',
+            'target' => 'field_ftritem_date_visited:start',
             'unique' => FALSE,
           ),
         ),
